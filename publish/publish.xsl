@@ -30,7 +30,7 @@
         <xsl:with-param name="historyURL" 
           select="concat(
             'https://github.com/', 
-            $ghuser, '/', $ghproject, '/', $ghbranch, 
+            $ghuser, '/', $ghproject, '/commits/', $ghbranch, 
             '/', $relativeLocation)" tunnel="yes"/>
       </xsl:apply-templates>
     </xsl:result-document>
