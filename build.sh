@@ -29,14 +29,14 @@ REPONAME=`basename $PWD`
 PARENTDIR=`dirname $PWD`
 USERNAME=`basename $PARENTDIR`
 
-// https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
-// <xsl:param name="oxygen-web-author" select="'https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html'"/>
-// $USERNAME
-// <xsl:param name="ghuser" select="'georgebina'"/>
-// $REPONAME
-// <xsl:param name="ghproject" select="'ghd-wiki'"/>
-// $TRAVIS_BRANCH
-// <xsl:param name="ghbranch" select="'master'"/>
+# https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
+# <xsl:param name="oxygen-web-author" select="'https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html'"/>
+# $USERNAME
+# <xsl:param name="ghuser" select="'georgebina'"/>
+# $REPONAME
+# <xsl:param name="ghproject" select="'ghd-wiki'"/>
+# $TRAVIS_BRANCH
+# <xsl:param name="ghbranch" select="'master'"/>
 
 
 echo "====================================="
