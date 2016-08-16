@@ -37,7 +37,7 @@
       <head><title><xsl:value-of select="(.//title)[1]"/></title></head>
       <body>
         <div id="header">
-          <a href="{$editURL}">Edit this page</a>
+          <a target="_blank" href="{$editURL}">Edit this page</a>
         </div>  
         <div id="content">
           <xsl:apply-templates mode="publish"/>
