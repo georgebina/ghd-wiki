@@ -19,18 +19,26 @@
   
   <xsl:template match="/" mode="publish">
     <html>
-      <head><title></title></head>
+      <head><title><xsl:value-of select="(.//title)[1]"/></title></head>
       <body>
         <xsl:apply-templates mode="publish"/>
       </body>
     </html>
   </xsl:template>
   
-  <xsl:template match="node() | @*" mode="publish">
-    <xsl:copy>
-      <xsl:apply-templates select="node() | @*" mode="publish"/>
-    </xsl:copy>
+  <xsl:template match="title" mode="publish">
+    <h1><xsl:apply-templates mode="publish"/></h1>
   </xsl:template>
+  <xsl:template match="p" mode="publish">
+    <p><xsl:apply-templates mode="publish"/></p>
+  </xsl:template>
+  
+  <xsl:template match="*" mode="publish">
+    <div>
+      <xsl:apply-templates mode="publish"/>
+    </div>
+  </xsl:template>
+  
   
   
 </xsl:stylesheet>
