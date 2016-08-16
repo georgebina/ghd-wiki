@@ -27,17 +27,24 @@
             '?url=github%3A%2F%2FgetFileContent%2F', 
             $ghuser, '%2F', $ghproject, '%2F', $ghbranch, 
             '%2F', $relativeLocation)" tunnel="yes"/>
+        <xsl:with-param name="historyURL" 
+          select="concat(
+            'https://github.com/', 
+            $ghuser, '/', $ghproject, '/', $ghbranch, 
+            '/', $relativeLocation)" tunnel="yes"/>
       </xsl:apply-templates>
     </xsl:result-document>
   </xsl:template>
   
   <xsl:template match="/" mode="publish">
     <xsl:param name="editURL" tunnel="yes"/>
+    <xsl:param name="historyURL" tunnel="yes"/>
     <html>
       <head><title><xsl:value-of select="(.//title)[1]"/></title></head>
       <body>
         <div id="header">
           <a target="_blank" href="{$editURL}">Edit this page</a>
+          <a target="_blank" href="{$historyURL}">Page history</a>
         </div>  
         <div id="content">
           <xsl:apply-templates mode="publish"/>
