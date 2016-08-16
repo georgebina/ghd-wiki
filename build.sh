@@ -25,10 +25,24 @@ echo "extract Saxon9"
 echo "====================================="
 unzip SaxonHE9-7-0-7J.zip -d saxon9/
 
+REPONAME=`basename $PWD`
+PARENTDIR=`dirname $PWD`
+USERNAME=`basename $PARENTDIR`
+
+// https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
+// <xsl:param name="oxygen-web-author" select="'https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html'"/>
+// $USERNAME
+// <xsl:param name="ghuser" select="'georgebina'"/>
+// $REPONAME
+// <xsl:param name="ghproject" select="'ghd-wiki'"/>
+// $TRAVIS_BRANCH
+// <xsl:param name="ghbranch" select="'master'"/>
+
+
 echo "====================================="
 echo "publish"
 echo "====================================="
-java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/publish.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml 
+java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/publish.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
 
 echo "====================================="
 echo "remove downloaded DITA-OT"

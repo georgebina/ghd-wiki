@@ -4,6 +4,13 @@
   exclude-result-prefixes="xs"
   version="3.0">
   
+  <xsl:param name="oxygen-web-author" select="'https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html'"/>
+  <xsl:param name="ghuser" select="'georgebina'"/>
+  <xsl:param name="ghproject" select="'ghd-wiki'"/>
+  <xsl:param name="ghbranch" select="'master'"/>
+  
+  <xsl:variable name="base" select="resolve-uri(document-uri(), '../wiki/')"/>
+  
   <xsl:template name="main">
     <xsl:for-each select="collection('../wiki?select=*.dita')">
       <xsl:apply-templates select="."/>
@@ -13,15 +20,28 @@
   <xsl:template match="/">
     <xsl:variable name="relativeLocation" select="substring-after(document-uri(.), 'wiki/')"/>
     <xsl:result-document href="out/{replace($relativeLocation, '.dita$', '.html')}" method="xhtml">
-      <xsl:apply-templates select="." mode="publish"/>
+      <xsl:apply-templates select="." mode="publish">
+        <xsl:with-param name="editURL" 
+          select="concat(
+            $oxygen-web-author, 
+            '?url=github%3A%2F%2FgetFileContent%2F', 
+            $ghuser, '%2F', $ghproject, '%2F', $ghbranch, 
+            '%2F', $relativeLocation)" tunnel="yes"/>
+      </xsl:apply-templates>
     </xsl:result-document>
   </xsl:template>
   
   <xsl:template match="/" mode="publish">
+    <xsl:param name="editURL" tunnel="yes"/>
     <html>
       <head><title><xsl:value-of select="(.//title)[1]"/></title></head>
       <body>
-        <xsl:apply-templates mode="publish"/>
+        <div id="header">
+          <a href="{$editURL}">Edit this page</a>
+        </div>  
+        <div id="content">
+          <xsl:apply-templates mode="publish"/>
+        </div>
       </body>
     </html>
   </xsl:template>
