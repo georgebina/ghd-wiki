@@ -49,7 +49,7 @@
         <div id="header">
           <a target="_blank" href="{$editURL}">Edit this page</a>
           <a target="_blank" href="{$historyURL}">Page history</a>
-          <a target="_blank" href="{$historyURL}">Create new file</a>
+          <a target="_blank" href="{$newFileURL}">Create new file</a>
         </div>  
         <div id="content">
           <xsl:apply-templates mode="publish"/>
