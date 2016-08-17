@@ -32,6 +32,9 @@
             'https://github.com/', 
             $ghuser, '/', $ghproject, '/commits/', $ghbranch, 
             '/', $relativeLocation)" tunnel="yes"/>
+        <xsl:with-param name="newFileURL" 
+          select="concat(
+            'https://github.com/',$ghuser,'/', $ghproject, '/new/', $ghbranch,'/wiki')"/>
       </xsl:apply-templates>
     </xsl:result-document>
   </xsl:template>
@@ -39,12 +42,14 @@
   <xsl:template match="/" mode="publish">
     <xsl:param name="editURL" tunnel="yes"/>
     <xsl:param name="historyURL" tunnel="yes"/>
+    <xsl:param name="newFileURL" tunnel="yes"/>
     <html>
       <head><title><xsl:value-of select="(.//title)[1]"/></title></head>
       <body>
         <div id="header">
           <a target="_blank" href="{$editURL}">Edit this page</a>
           <a target="_blank" href="{$historyURL}">Page history</a>
+          <a target="_blank" href="{$historyURL}">Create new file</a>
         </div>  
         <div id="content">
           <xsl:apply-templates mode="publish"/>
