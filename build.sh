@@ -16,6 +16,26 @@ echo "====================================="
 unzip dita-ot-2.2.3.zip
 
 echo "====================================="
+echo "download DITA-OT LW-DITA plugin"
+echo "====================================="
+
+wget https://github.com/oasis-open/dita-lightweight/archive/master.zip --no-check-certificate
+
+echo "====================================="
+echo "extract DITA-OT LW-DITA to DITA-OT"
+echo "====================================="
+
+unzip master.zip -d dita-ot-2.2.3/plugins/
+
+echo "====================================="
+echo "integrate plugins"
+echo "====================================="
+
+cd dita-ot-2.2.3/
+bin/ant -f integrator.xml 
+cd ..
+
+echo "====================================="
 echo "download Saxon9"
 echo "====================================="
 wget https://sourceforge.net/projects/saxon/files/Saxon-HE/9.7/SaxonHE9-7-0-7J.zip --no-check-certificate
