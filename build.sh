@@ -25,7 +25,8 @@ echo "====================================="
 echo "extract DITA-OT LW-DITA to DITA-OT"
 echo "====================================="
 
-unzip master.zip -d dita-ot-2.2.3/plugins/
+unzip master.zip -d dita-ot-2.2.3
+mv dita-ot-2.2.3/dita-lightweight-master/org.oasis.lwdita dita-ot-2.2.3/plugins/
 
 echo "====================================="
 echo "integrate plugins"
