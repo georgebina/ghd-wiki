@@ -34,7 +34,8 @@
             '/', $relativeLocation)" tunnel="yes"/>
         <xsl:with-param name="newFileURL" 
           select="concat(
-            'https://github.com/',$ghuser,'/', $ghproject, '/new/', $ghbranch,'/wiki')"/>
+            'https://github.com/', $ghuser, '/', $ghproject, '/new/', $ghbranch,'/wiki')" 
+          tunnel="yes"/>
       </xsl:apply-templates>
     </xsl:result-document>
   </xsl:template>
