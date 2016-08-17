@@ -9,6 +9,7 @@
       GitHub Pages.</p>
     <p>GitHub is used as content storage and the oXygen XML Web Author is used for online
       editing.</p>
-    <p>Test with Stefan.</p>
+    <p>Testing links: <xref href="test.html" format="html" scope="external">Link to test
+        topic</xref></p>
   </body>
 </topic>
