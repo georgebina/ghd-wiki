@@ -65,6 +65,11 @@
   <xsl:template match="p" mode="publish">
     <p><xsl:apply-templates mode="publish"/></p>
   </xsl:template>
+  <xsl:template match="xref[@scope='external']" mode="publish">
+    <a href="{@href}"><xsl:apply-templates mode="publish"/></a>
+  </xsl:template>
+  
+  
   
   <xsl:template match="*" mode="publish">
     <div>
