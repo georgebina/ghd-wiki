@@ -9,7 +9,7 @@ To get the same functionality under your account, you need to follow the steps b
 - Fork the project
 - Under the *Settings* tab in GitHub make sure the *GitHub Pages* section says
   ```Your GitHub Pages site is currently being built from the gh-pages branch.```
-- Go to [Travis website](travis-ci.org) and use the *Sign in with GitHub* action then authorize Travis to access your account - this is needed to enable automatic building of the Wiki output as HTML and comminting the result on the *gh-pages* branch
+- Go to [Travis website](http://travis-ci.org) and use the *Sign in with GitHub* action then authorize Travis to access your account - this is needed to enable automatic building of the Wiki output as HTML and comminting the result on the *gh-pages* branch
 - Identify then the forked repository and activate it using the *Activate repository* action
 - Under *More options*->*Settings*  
     - Enable *Build only if .travis.yml is present*
