@@ -1,6 +1,6 @@
 # GitHub + DITA based WIKI example (ghd-wiki)
 
-This project shows a basic Wiki implementation baased on GitHub as content repository, Travis for automatic builds, XSLT as scripting language and DITA as the source format.
+This project shows a basic Wiki implementation based on GitHub as content repository, Travis for automatic builds, XSLT as scripting language and DITA as the source format.
 
 The content stays in the *master* branch in the `wiki` subfolder and you can place there DITA topics which will be automatically published by *travis* to HTML using the `publish/publish.xsl` XSLT script and commited on the *gh-pages* branch which is served by *GitHub Pages* as a website.
 
@@ -17,9 +17,9 @@ To get the same functionality under your account, you need to follow the steps b
     - Define the GH_TOKEN variable under *Environment Variables* by setting its value to a GitHub Token that you can generate from GitHub in order to enable Travis to commit on your GitHub repository.
 To obtain that value, you need to go to *GitHub* and under *Settings* there is a *Personal access tokens* section. Use the *Generate new token* button to generate a token and enable the options under the *repo* category. Copy the token value and use it to define the value of the *GH_TOKEN* variable
 
-- You need to push some changes to GitHub on the *master* branch to force an initial build that will fix the links for the generated website to be for your project, rather than for the forked project. One possibility is to edit this file and push it to the repository, then you should find the updated website on GitHib Pages.
+- You need to push some changes to GitHub on the *master* branch to force an initial build that will fix the links for the generated website to be for your project, rather than for the forked project. One possibility is to edit this file and push it to the repository, then you should find the updated website on GitHub Pages.
 
-- Check on the Travis website and see when the build is finalied, then your project GitHub Pages will be up-to-date and you can use the generated website.
+- Check on the Travis website and see when the build is finalised, then your project GitHub Pages will be up-to-date and you can use the generated website.
 
 
 ##Note
