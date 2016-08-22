@@ -5,3 +5,6 @@ script:
 - sh .travis/publish.sh
 after_success:
 - sh .travis/deploy.sh
+notifications:
+  email:
+    on_success: always
