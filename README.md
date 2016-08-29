@@ -29,7 +29,7 @@ The GitHub Pages URL where you can see the Wiki is something like
 If you forked the project then the URL needs to be updated to contain your user name and your project name.
 
 ##Note
-Creating a new file requires you to paste the initial content of a topic, which you can fined below:
+Creating a new file requires you to paste the initial content of a topic, which you can find below:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
