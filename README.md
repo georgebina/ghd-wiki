@@ -21,6 +21,10 @@ To obtain that value, you need to go to *GitHub* and under *Settings* there is a
 
 - Check on the Travis website and see when the build is finalised, then your project GitHub Pages will be up-to-date and you can use the generated website.
 
+##Note
+The GitHub Pages URL where you can see the Wiki is something like 
+[http://georgebina.github.io/ghd-wiki](http://georgebina.github.io/ghd-wiki)
+If you forked the project then the URL needs to be updated to contain your user name and your project name.
 
 ##Note
 Creating a new file requires you to paste the initial content of a topic, which you can fined below:
