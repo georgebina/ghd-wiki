@@ -40,6 +40,21 @@ unzip oxygen-webhelp.zip
 cp -R com.oxygenxml.* dita-ot-2.2.3/plugins/
 mv dita-ot-2.2.3/plugins/com.oxygenxml.webhelp/plugin_2.x.xml dita-ot-2.2.3/plugins/com.oxygenxml.webhelp/plugin.xml
 
+echo "==============="
+echo $WEBHELP_LICENSE
+echo "==============="
+
+echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
+echo "" >> licensekey.txt
+echo $WEBHELP_LICENSE | tr " " "\n" | tail -8  >> licensekey.txt
+
+echo "****"
+cat licensekey.txt | head -8
+echo "****"
+
+cp licensekey.txt dita-ot-2.2.3/plugins/com.oxygenxml.webhelp/licensekey.txt
+
+
 echo "====================================="
 echo "Add Edit Link to DITA-OT"
 echo "====================================="
@@ -71,11 +86,7 @@ USERNAME=`basename $PARENTDIR`
 
 java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/generateMap.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
 
-echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
-echo "" >> licensekey.txt
-echo $WEBHELP_LICENSE | tr " " "\n" | tail -8  >> licensekey.txt
 
-cp licensekey.txt dita-ot-2.2.3/plugins/com.oxygenxml.webhelp/licensekey.txt
 
 # Send some parameters to the "editlink" plugin as system properties
 export ANT_OPTS="$ANT_OPTS -Dditamap.path=map.ditamap"
