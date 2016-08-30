@@ -80,6 +80,13 @@ PARENTDIR=`dirname $PWD`
 USERNAME=`basename $PARENTDIR`
 
 echo "====================================="
+echo "publish"
+echo "====================================="
+java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/publish.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
+mkdir out/wiki/simple
+mv out/wiki/* out/wiki/simple
+
+echo "====================================="
 echo "generate map"
 echo "====================================="
 java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/generateMap.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
@@ -91,19 +98,15 @@ export ANT_OPTS="$ANT_OPTS -Dcwd=`pwd`"
 export ANT_OPTS="$ANT_OPTS -Drepo.url=github://getFileContent/$USERNAME/$REPONAME/$TRAVIS_BRANCH/"
 export ANT_OPTS="$ANT_OPTS -Dwebapp.url=https://www.oxygenxml.com/webapp-demo-aws/"
 
-dita-ot-2.2.3/bin/dita -i map.ditamap -f webhelp-responsive -o out/wiki/dita
-echo "====================================="
-echo "dita/index.html"
-echo "====================================="
-cat out/wiki/dita/index.html
-
-
-echo "====================================="
-echo "publish"
-echo "====================================="
-java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/publish.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
-
+dita-ot-2.2.3/bin/dita -i map.ditamap -f webhelp-responsive -o out/wiki
 echo "====================================="
 echo "index.html"
 echo "====================================="
 cat out/wiki/index.html
+
+
+
+echo "====================================="
+echo "simple/index.html"
+echo "====================================="
+cat out/wiki/simple/index.html
