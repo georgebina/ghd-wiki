@@ -28,6 +28,26 @@ unzip master.zip -d dita-ot-2.2.3
 mv dita-ot-2.2.3/dita-lightweight-master/org.oasis.lwdita dita-ot-2.2.3/plugins/
 
 echo "====================================="
+echo "download WebHelp plugin"
+echo "====================================="
+
+wget http://mirror.oxygenxml.com/InstData/Editor/Webhelp/oxygen-webhelp.zip
+
+echo "====================================="
+echo "extract WebHelp to DITA-OT"
+echo "====================================="
+unzip oxygen-webhelp.zip 
+cp -R com.oxygenxml.* dita-ot-2.2.3/plugins/
+mv dita-ot-2.2.3/plugins/com.oxygenxml.webhelp/plugin_2.x.xml dita-ot-2.2.3/plugins/com.oxygenxml.webhelp/plugin.xml
+
+echo "====================================="
+echo "Add Edit Link to DITA-OT"
+echo "====================================="
+
+# Add the editlink plugin
+git clone https://github.com/ctalau/ditaot-editlink-plugin dita-ot-2.2.3/plugins/com.oxygenxml.editlink/
+
+echo "====================================="
 echo "integrate plugins"
 echo "====================================="
 cd dita-ot-2.2.3/
@@ -47,6 +67,23 @@ unzip SaxonHE9-7-0-7J.zip -d saxon9/
 REPONAME=`basename $PWD`
 PARENTDIR=`dirname $PWD`
 USERNAME=`basename $PARENTDIR`
+
+
+java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/generateMap.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
+
+echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
+echo "" >> licensekey.txt
+echo $WEBHELP_LICENSE | tr " " "\n" | tail -8  >> licensekey.txt
+
+cp licensekey.txt dita-ot-2.2.3/plugins/com.oxygenxml.webhelp/licensekey.txt
+
+# Send some parameters to the "editlink" plugin as system properties
+export ANT_OPTS="$ANT_OPTS -Dditamap.path=map.ditamap"
+export ANT_OPTS="$ANT_OPTS -Dcwd=`pwd`"
+export ANT_OPTS="$ANT_OPTS -Drepo.url=github://getFileContent/$USERNAME/$REPONAME/$TRAVIS_BRANCH/"
+export ANT_OPTS="$ANT_OPTS -Dwebapp.url=https://www.oxygenxml.com/webapp-demo-aws/"
+
+dita-ot-2.2.3/bin/dita -i map.ditamap -f webhelp-responsive -o out/wiki/dita
 
 echo "====================================="
 echo "publish"
