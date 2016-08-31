@@ -102,7 +102,7 @@ MDTOPICS=`ls -1 wiki/*.md | sed -e 's/$/,/' | tr -d "\n" | sed -e 's/,$//'`
 echo "====================================="
 echo "generate map"
 echo "====================================="
-java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/generateMap.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html mdtopics="$MDTOPICS" title=$TITLE
+java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/generateMap.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html mdtopics="$MDTOPICS" title="$TITLE"
 cat map.ditamap
 
 # Send some parameters to the "editlink" plugin as system properties
