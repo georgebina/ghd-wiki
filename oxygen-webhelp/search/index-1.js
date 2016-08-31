@@ -37,7 +37,7 @@ stopWords[32]= "of";
 var indexerLanguage="en";
 
 // Auto generated index for searching.
-w["author"]="0*0,2*1,3*0";
+w["author"]="0*0,2*1,3*0,4*0";
 w["automatically"]="0*0,2*26";
 w["based"]="0*30,2*30";
 w["branch"]="0*1,2*27";
@@ -50,12 +50,12 @@ w["converted"]="0*0,2*26";
 w["create"]="0*0,1*31,3*30";
 w["dita"]="0*32,2*82";
 w["each"]="0*0,2*26";
-w["edit"]="0*0,1*0,2*10,3*10";
+w["edit"]="0*0,1*0,2*10,3*10,4*10";
 w["editing"]="0*0,2*0";
 w["es"]="0*20";
 w["file"]="0*0,1*0";
 w["folder"]="0*0,2*26";
 w["from"]="0*0,2*26";
-w["generated"]="2*0,3*0";
+w["generated"]="2*0,3*0,4*0";
 w["gh"]="0*0,2*0";
 
