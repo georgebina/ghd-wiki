@@ -5,6 +5,9 @@ script:
 - sh .travis/publish.sh
 after_success:
 - sh .travis/deploy.sh
+env:
+  global:
+  - TITLE="Sample DITA Wiki"
 notifications:
   email:
     on_success: always

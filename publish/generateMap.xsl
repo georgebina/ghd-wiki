@@ -9,13 +9,14 @@
   <xsl:param name="ghuser" select="'georgebina'"/>
   <xsl:param name="ghproject" select="'ghd-wiki'"/>
   <xsl:param name="ghbranch" select="'master'"/>
+  <xsl:param name="title" select="'DITA Wiki'"></xsl:param>
   
   <xsl:param name="mdtopics" select="''"/>  
   <xsl:variable name="base" select="resolve-uri(document-uri(), '../wiki/')"/>
   
   <xsl:template name="main">
     <xsl:variable name="topics">
-      <title>GitHub DITA Wiki!</title>
+      <title><xsl:value-of select="$title"/></title>
       <xsl:for-each select="collection('../wiki?select=*.dita')">
         <xsl:apply-templates select="."/>
       </xsl:for-each>
