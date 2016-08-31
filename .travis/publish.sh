@@ -59,6 +59,17 @@ echo "====================================="
 git clone https://github.com/ctalau/ditaot-editlink-plugin dita-ot-2.2.3/plugins/com.oxygenxml.editlink/
 
 echo "====================================="
+echo "download Markdown plugin"
+echo "====================================="
+
+wget https://github.com/jelovirt/dita-ot-markdown/releases/download/1.1.0/com.elovirta.dita.markdown_1.1.0.zip
+
+echo "====================================="
+echo "extract MarkDown plugin"
+echo "====================================="
+unzip com.elovirta.dita.markdown_1.1.0.zip -d dita-ot-2.2.3/plugins/com.elovirta.dita.markdown
+
+echo "====================================="
 echo "integrate plugins"
 echo "====================================="
 cd dita-ot-2.2.3/
@@ -86,10 +97,12 @@ java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon
 mkdir out/wiki/simple
 mv out/wiki/* out/wiki/simple
 
+MDTOPICS=`ls -1 wiki/*.md | sed -e 's/$/,/' | tr -d "\n" | sed -e 's/,$//'`
+
 echo "====================================="
 echo "generate map"
 echo "====================================="
-java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/generateMap.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
+java -cp saxon9/saxon9he.jar:dita-ot-2.2.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/generateMap.xsl -it:main -catalog:dita-ot-2.2.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html mdtopics="$MDTOPICS"
 cat map.ditamap
 
 # Send some parameters to the "editlink" plugin as system properties
