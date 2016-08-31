@@ -9,6 +9,7 @@
   <xsl:param name="ghproject" select="'ghd-wiki'"/>
   <xsl:param name="ghbranch" select="'master'"/>
   
+  <xsl:param name="mdtopics" select="''"/>  
   <xsl:variable name="base" select="resolve-uri(document-uri(), '../wiki/')"/>
   
   <xsl:template name="main">
@@ -18,9 +19,13 @@
         <xsl:apply-templates select="."/>
       </xsl:for-each>
     </xsl:variable>
+    
     <xsl:result-document href="map.ditamap" doctype-public="-//OASIS//DTD DITA Map//EN" doctype-system="map.dtd">
       <map>
         <xsl:copy-of select="$topics"/>
+        <xsl:for-each select="tokenize($mdtopics, ',')">
+          <topicref href="{encode-for-uri(.)}" format="markdown"/>
+        </xsl:for-each>        
       </map>
     </xsl:result-document>
   </xsl:template>
