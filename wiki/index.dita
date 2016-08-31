@@ -2,6 +2,16 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_zn3_2bc_zw">
   <title>DITA 2 Wiki</title>
+  <prolog>
+    <metadata>
+      <data name="wh-tile">
+        <data name="image" href="img/test.png" format="png">
+          <data name="attr-width" value="64"/>
+          <data name="attr-height" value="64"/>
+        </data>  
+      </data>
+    </metadata>
+  </prolog>
   <body>
     <p>This project publishes DITA content from the 'wiki' folder automatically using an XSLT script
       that is triggered on each commit on the master branch through Travis. The DITA content is
