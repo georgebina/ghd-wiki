@@ -1,1 +1,0 @@
-var contextIds = {"topic_zn3_2bc_zw":"wiki/index.html","topic_elz_sfk_zw":"wiki/test.html","test_new_article":"wiki/article.md","test_md":"wiki/testMarkDown.md"}
