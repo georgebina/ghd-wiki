@@ -21,7 +21,7 @@
       editing.</p>
     <p>Testing links: <xref href="test.html" format="html" scope="external">Link to test
         topic</xref></p>
-    <p>Contribution...</p>
+    <p/>
     <p>Test xref <xref href="test.dita#topic_elz_sfk_zw"/>.</p>
   </body>
 </topic>
