@@ -4,7 +4,24 @@
   <title>How to create content</title>
   <body>
     <p>This is a smaller sample.</p>
-    <p>Radu</p>
+    <p>Radu George</p>
+    <simpletable id="simpletable_qgv_3tn_lx">
+      <sthead>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </sthead>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+    </simpletable>
     <p>This is a test</p>
     <p>Updated. Conflict?</p>
   </body>
