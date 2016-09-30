@@ -1,12 +1,12 @@
 
 // Auto generated index for searching.
+w["gh-pages"]="0*0,3*0";
 w["github"]="0*1,2*10,3*12,4*10,5*10";
 w["history"]="0*0,1*0";
 w["how"]="1*30,3*0,4*30";
 w["html"]="0*0,3*0";
 w["link"]="0*0,3*0";
 w["links"]="0*0,3*0";
-w["mark"]="0*30,3*30";
 w["markdown"]="5*26";
 w["master"]="0*0,3*26";
 w["md"]="5*30";
