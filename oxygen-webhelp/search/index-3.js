@@ -1,6 +1,5 @@
 
 // Auto generated index for searching.
-w["search"]="2*0,3*0,4*0,5*0";
 w["serves"]="0*0,3*0";
 w["smaller"]="1*0,4*26";
 w["storage"]="0*0,3*0";

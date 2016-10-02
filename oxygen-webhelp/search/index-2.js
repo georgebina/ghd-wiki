@@ -1,6 +1,5 @@
 
 // Auto generated index for searching.
-w["gh-pages"]="0*0,3*0";
 w["github"]="0*1,2*10,3*12,4*10,5*10";
 w["history"]="0*0,1*0";
 w["how"]="1*30,3*0,4*30";
@@ -21,4 +20,5 @@ w["publishes"]="0*0,3*26";
 w["radu"]="1*0,4*26";
 w["sample"]="1*0,4*26";
 w["script"]="0*0,3*26";
+w["search"]="2*0,3*0,4*0,5*0";
 
