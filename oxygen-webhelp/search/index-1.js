@@ -55,6 +55,7 @@ w["author"]="0*0,1*0,2*27,3*1,4*1";
 w["authoring"]="1*2,4*53";
 w["automatically"]="0*2,2*2";
 w["available"]="3*0";
+w["avis"]="0*0";
 w["basic"]="0*0,2*0";
 w["being"]="1*0,4*0";
 w["benefit"]="1*0,4*0";
