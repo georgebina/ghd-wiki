@@ -18,7 +18,7 @@
   </xsl:template>
   
   <xsl:template match="/">
-    <xsl:variable name="relativeLocation" select="substring-after(document-uri(.), 'wiki/')"/>
+    <xsl:variable name="relativeLocation" select="concat('simple/', substring-after(document-uri(.), 'wiki/'))"/>
     <xsl:result-document href="out/{replace($relativeLocation, '.dita$', '.html')}" method="xhtml">
       <xsl:apply-templates select="." mode="publish">
         <xsl:with-param name="editURL" 
