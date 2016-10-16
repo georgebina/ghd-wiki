@@ -1,5 +1,7 @@
 
 // Auto generated index for searching.
+w["form"]="1*1,4*52";
+w["format"]="0*0,2*0";
 w["formats"]="0*0,2*0";
 w["from"]="1*0,4*0";
 w["further"]="1*0,4*0";
@@ -15,11 +17,12 @@ w["handling"]="0*0,2*0";
 w["having"]="1*0,4*0";
 w["help"]="1*0,4*0";
 w["highlight"]="3*0";
-w["hints"]="1*0,4*51";
+w["hints"]="1*1,4*52";
 w["history"]="0*0,1*0,2*10,3*10,4*10";
 w["how"]="0*0,2*26";
 w["html"]="0*0,2*0";
-w["inline"]="1*1,4*102";
+w["inline"]="1*2,4*103";
+w["interface"]="1*1,4*1";
 w["just"]="0*0,2*0";
 w["knowledge"]="3*26";
 w["less"]="1*0,4*0";
@@ -46,12 +49,14 @@ w["oxygen"]="0*1,1*0,2*28,3*2,4*1";
 w["page"]="0*1,1*1,3*26";
 w["pages"]="0*3,2*29,3*26";
 w["people"]="3*26";
+w["place"]="1*0,4*0";
 w["placed"]="0*0,2*0";
-w["placeholders"]="1*0,4*51";
+w["placeholders"]="1*1,4*52";
 w["plan"]="3*0";
 w["please"]="0*0,2*0";
 w["plugin"]="0*0,2*0";
 w["plugins"]="0*0,2*26";
 w["plus"]="0*0,2*26";
 w["preview"]="3*0";
+w["project"]="0*0,2*26";
 
