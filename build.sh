@@ -53,7 +53,7 @@ if [ ! -d "dita-ot-2.2.3" ]; then
   echo "====================================="
   
   # Add the editlink plugin
-  git clone https://github.com/ctalau/ditaot-editlink-plugin dita-ot-2.2.3/plugins/com.oxygenxml.editlink/
+  git clone https://github.com/georgebina/ditaot-editlink-plugin dita-ot-2.2.3/plugins/com.oxygenxml.editlink/
   
   
   echo "====================================="
