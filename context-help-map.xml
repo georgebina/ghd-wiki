@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
    <appContext helpID="topic_zn3_2bc_zw" path="wiki/index.html"/>
-   <appContext helpID="topic_elz_sfk_zw" path="wiki/test.html"/>
-   <appContext helpID="test_new_article" path="wiki/article.md"/>
-   <appContext helpID="test_md" path="wiki/testMarkDown.md"/>
+   <appContext helpID="topic_elz_sfk_zw" path="wiki/topic.html"/>
 </map>
