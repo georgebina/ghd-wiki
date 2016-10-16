@@ -26,7 +26,15 @@
       <map>
         <xsl:copy-of select="$topics"/>
         <xsl:for-each select="tokenize($mdtopics, ',')">
-          <topicref href="{encode-for-uri(.)}" format="markdown"/>
+          <xsl:variable name="href">
+            <xsl:for-each select="tokenize(., '/')">
+              <xsl:value-of select="encode-for-uri(.)"/>
+              <xsl:if test="position()!=last()">
+                <xsl:text>/</xsl:text>
+              </xsl:if>
+            </xsl:for-each>
+          </xsl:variable>
+          <topicref href="{$href}" format="markdown"/>
         </xsl:for-each>        
       </map>
     </xsl:result-document>
