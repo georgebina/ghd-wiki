@@ -93,8 +93,9 @@ USERNAME=`basename $PARENTDIR`
 echo "====================================="
 echo "publish"
 echo "====================================="
-mkdir out/simple
 java -cp saxon9/saxon9he.jar:dita-ot-2.3.3/lib/xml-resolver-1.2.jar net.sf.saxon.Transform -xsl:publish/publish.xsl -it:main -catalog:dita-ot-2.3.3/catalog-dita.xml ghuser=$USERNAME ghproject=$REPONAME ghbranch=$TRAVIS_BRANCH oxygen-web-author=https://www.oxygenxml.com/webapp-demo-aws/app/oxygen.html
+mkdir out/wiki/simple
+mv out/wiki/*.html out/wiki/simple
 
 MDTOPICS=`ls -1 wiki/*.md | sed -e 's/$/,/' | tr -d "\n" | sed -e 's/,$//'`
 
