@@ -9,7 +9,7 @@ env:
   global:
   - TITLE="Sample DITA Wiki"
   - WELCOME="DITA magic with GitHub and oXygen"
-  - SKIN ="orange"
+  - SKIN="orange"
 notifications:
   email:
     on_success: always
