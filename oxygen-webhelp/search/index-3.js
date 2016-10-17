@@ -1,5 +1,6 @@
 
 // Auto generated index for searching.
+w["provides"]="1*0,4*0";
 w["providing"]="1*0,3*0,4*51";
 w["publish"]="0*0,2*0";
 w["publishing"]="0*0,2*0";
@@ -37,7 +38,6 @@ w["toolkit"]="0*0,2*26";
 w["topics"]="0*1,2*1";
 w["tr"]="0*0";
 w["travis"]="0*1,2*28";
-w["uch"]="4*0";
 w["use"]="3*26";
 w["used"]="1*0,3*26,4*51";
 w["user"]="1*1,4*1";
