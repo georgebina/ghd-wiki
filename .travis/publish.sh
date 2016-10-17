@@ -111,6 +111,9 @@ export ANT_OPTS="$ANT_OPTS -Dcwd=`pwd`"
 export ANT_OPTS="$ANT_OPTS -Drepo.url=github://getFileContent/$USERNAME/$REPONAME/$TRAVIS_BRANCH/"
 export ANT_OPTS="$ANT_OPTS -Dwebapp.url=https://www.oxygenxml.com/webapp-demo-aws/"
 
+# Send parameters for the Webhelp styling.
+export ANT_OPTS="$ANT_OPTS -Dwebhelp.fragment.welcome='$WELCOME'"
+
 dita-ot-2.3.3/bin/dita -i map.ditamap -f webhelp-responsive -o out/wiki
 echo "====================================="
 echo "index.html"
