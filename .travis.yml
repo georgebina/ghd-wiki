@@ -8,7 +8,7 @@ after_success:
 env:
   global:
   - TITLE="Sample DITA Wiki"
-  - WELCOME="DITA and Markdown magic with GitHub and oXygen"
+  - WELCOME="DITA magic with GitHub and oXygen"
 notifications:
   email:
     on_success: always
