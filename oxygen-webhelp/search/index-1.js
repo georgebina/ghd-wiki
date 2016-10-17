@@ -90,11 +90,11 @@ w["editor"]="3*0";
 w["editors"]="3*0";
 w["especially"]="1*0,4*0";
 w["etc"]="0*0,2*0";
-w["exampl"]="4*0";
-w["example"]="1*0";
+w["example"]="1*0,4*0";
 w["experience"]="1*1,4*52";
 w["extended"]="1*0,4*0";
 w["few"]="0*2,2*53";
 w["file"]="0*0,1*0";
 w["folder"]="0*0,2*0";
+w["form"]="1*1,4*52";
 
