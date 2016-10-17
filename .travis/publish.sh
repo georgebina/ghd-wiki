@@ -114,6 +114,10 @@ export ANT_OPTS="$ANT_OPTS -Dwebapp.url=https://www.oxygenxml.com/webapp-demo-aw
 # Send parameters for the Webhelp styling.
 export ANT_OPTS="$ANT_OPTS -Dwebhelp.fragment.welcome='$WELCOME'"
 
+export ANT_OPTS="$ANT_OPTS -Dwebhelp.responsive.template.name=bootstrap" 
+export ANT_OPTS="$ANT_OPTS -Dwebhelp.responsive.variant.name=tiles"
+export ANT_OPTS="$ANT_OPTS -Dwebhelp.responsive.skin.name=green"
+
 dita-ot-2.3.3/bin/dita -i map.ditamap -f webhelp-responsive -o out/wiki
 echo "====================================="
 echo "index.html"
