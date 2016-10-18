@@ -1,12 +1,12 @@
 
 // Auto generated index for searching.
-w["provides"]="1*0,4*0";
 w["providing"]="1*0,3*0,4*26";
 w["publish"]="0*0,2*0";
 w["publishing"]="0*0,2*0";
 w["regenerated"]="0*0,2*0";
 w["same"]="1*0,4*0";
 w["script"]="0*0,2*0";
+w["se"]="4*0";
 w["search"]="2*0,3*0,4*0";
 w["see"]="0*0,2*0";
 w["serves"]="0*0,2*0";
