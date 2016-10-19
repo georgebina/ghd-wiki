@@ -1,6 +1,5 @@
 
 // Auto generated index for searching.
-w["form"]="1*1,4*27";
 w["format"]="0*0,2*0";
 w["formats"]="0*0,2*0";
 w["from"]="1*0,4*0";
@@ -23,6 +22,7 @@ w["html"]="0*0,2*0";
 w["inline"]="1*2,4*53";
 w["interface"]="1*1,4*1";
 w["just"]="0*0,2*0";
+w["ki"]="2*0";
 w["knowledge"]="3*26";
 w["less"]="1*0,4*0";
 w["lightweight"]="0*0,1*32,2*27,4*57";
@@ -49,7 +49,8 @@ w["pages"]="0*3,2*29,3*26";
 w["people"]="3*26";
 w["place"]="1*0,4*0";
 w["placed"]="0*0,2*0";
-w["placeholders"]="1*1,4*27";
+w["placehol"]="4*0";
+w["placeholders"]="1*1,4*26";
 w["plan"]="3*0";
 w["please"]="0*0,2*0";
 w["plugin"]="0*0,2*0";
