@@ -38,8 +38,9 @@ var indexerLanguage="en";
 
 // Auto generated index for searching.
 w["able"]="3*26";
+w["ac"]="4*0";
 w["accepted"]="0*0,2*0";
-w["actions"]="1*1,3*0,4*27";
+w["actions"]="1*1,3*0,4*26";
 w["actual"]="1*0,4*0";
 w["advantage"]="1*1,4*27";
 w["all"]="1*0,4*0";
@@ -63,7 +64,7 @@ w["branch"]="0*0,2*0";
 w["build"]="0*0,2*0";
 w["built"]="3*0";
 w["built-in"]="3*0";
-w["can"]="0*0,1*2,2*26,3*26,4*28";
+w["can"]="0*0,1*3,2*26,3*26,4*54";
 w["clearly"]="1*0,4*0";
 w["clicks"]="0*0,2*0";
 w["combine"]="0*0,2*26";

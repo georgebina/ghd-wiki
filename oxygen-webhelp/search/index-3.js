@@ -1,12 +1,10 @@
 
 // Auto generated index for searching.
-w["providing"]="1*0,3*0,4*26";
 w["publish"]="0*0,2*0";
 w["publishing"]="0*0,2*0";
 w["regenerated"]="0*0,2*0";
 w["same"]="1*0,4*0";
 w["script"]="0*0,2*0";
-w["se"]="4*0";
 w["search"]="2*0,3*0,4*0";
 w["see"]="0*0,2*0";
 w["serves"]="0*0,2*0";
@@ -28,10 +26,11 @@ w["suitable"]="1*0,4*0";
 w["support"]="1*1,3*0,4*1";
 w["supported"]="0*0,2*0";
 w["syntax"]="3*0";
+w["take"]="1*0,4*26";
 w["takes"]="1*0,4*0";
-w["taking"]="1*0,4*26";
 w["through"]="0*1,1*0,2*1,4*0";
-w["thus"]="3*0";
+w["thus"]="1*0,3*0,4*26";
+w["tions"]="4*0";
 w["tool"]="1*1,4*1";
 w["toolbar"]="3*0";
 w["toolkit"]="0*0,2*26";
@@ -56,6 +55,6 @@ w["within"]="0*0,2*0";
 w["working"]="1*0,4*0";
 w["xml"]="0*2,1*0,2*28,3*1,4*0";
 w["xslt"]="0*0,2*0";
-w["you"]="1*0,4*0";
+w["you"]="1*1,4*27";
 w["your"]="1*0,4*0";
 
