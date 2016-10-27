@@ -79,12 +79,12 @@ cd ..
 echo "====================================="
 echo "download Saxon9"
 echo "====================================="
-wget https://sourceforge.net/projects/saxon/files/Saxon-HE/9.7/SaxonHE9-7-0-7J.zip
+wget http://downloads.sourceforge.net/project/saxon/Saxon-HE/9.7/SaxonHE9-7-0-10J.zip
 
 echo "====================================="
 echo "extract Saxon9"
 echo "====================================="
-unzip SaxonHE9-7-0-7J.zip -d saxon9/
+unzip SaxonHE9-7-0-10J.zip -d saxon9/
 
 REPONAME=`basename $PWD`
 PARENTDIR=`dirname $PWD`
