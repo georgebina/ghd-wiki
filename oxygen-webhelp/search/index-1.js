@@ -38,9 +38,8 @@ var indexerLanguage="en";
 
 // Auto generated index for searching.
 w["able"]="3*26";
-w["ac"]="4*0";
 w["accepted"]="0*0,2*0";
-w["actions"]="1*1,3*0,4*26";
+w["actions"]="1*1,3*0,4*27";
 w["actual"]="1*0,4*0";
 w["advantage"]="1*1,4*27";
 w["all"]="1*0,4*0";
