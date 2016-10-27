@@ -1,6 +1,5 @@
 
 // Auto generated index for searching.
-w["form"]="1*1,4*27";
 w["format"]="0*0,2*0";
 w["formats"]="0*0,2*0";
 w["from"]="1*0,4*0";
@@ -14,11 +13,11 @@ w["github"]="0*33,2*83,3*0";
 w["great"]="1*0,4*0";
 w["handling"]="0*0,2*0";
 w["having"]="1*0,4*0";
+w["he"]="4*0";
 w["help"]="1*0,4*0";
 w["highlight"]="3*0";
 w["hints"]="1*1,4*27";
 w["history"]="0*0,1*0,2*10,3*10,4*10";
-w["horing"]="4*0";
 w["how"]="0*0,2*26";
 w["html"]="0*0,2*0";
 w["inline"]="1*2,4*53";
@@ -60,4 +59,5 @@ w["plus"]="0*0,2*26";
 w["preview"]="3*0";
 w["project"]="0*0,1*0,2*26,4*26";
 w["provide"]="1*0,4*0";
+w["provides"]="1*0,4*0";
 
