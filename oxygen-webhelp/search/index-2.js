@@ -1,6 +1,5 @@
 
 // Auto generated index for searching.
-w["folder"]="0*0,2*0";
 w["form"]="1*1,4*27";
 w["format"]="0*0,2*0";
 w["formats"]="0*0,2*0";
@@ -25,6 +24,7 @@ w["inline"]="1*2,4*53";
 w["interface"]="1*1,4*1";
 w["just"]="0*0,2*0";
 w["knowledge"]="3*26";
+w["lacacon"]="1*30,2*0,4*30";
 w["less"]="1*0,4*0";
 w["lightweight"]="0*0,1*32,2*27,4*57";
 w["like"]="0*1,2*27";
