@@ -11,15 +11,15 @@
  * Fonts.
  *  
  */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700';
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic);
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /*
  * ------------------------------------------------------------------
  *  
- * Fight with bootstrap
+ * Fight bootstrap
  *  
  */
 .navbar{
@@ -31,7 +31,7 @@ body{
 a,
 a:hover,
 a:visited{
-    color: navy;
+    color:#99cc00;
 }
 a:hover{
     text-decoration: none;
@@ -44,9 +44,9 @@ a:hover{
  *  
  */
 .wh_publication_title > a{
-    color: #002d80;
-    font-size: 1.6em;
-    font-weight: 700;
+    color: black;
+    font-size: 1.7em;
+    font-weight: 900;
 }
 
 
@@ -56,27 +56,40 @@ a:hover{
  * Menu
  *  
  */
+.wh_top_menu{
+    font-weight:bold;
+}
+/* Labels in main bar */
+.wh_top_menu > ul > li > span > a{
+    font-weight:900;
+
+}
+
+.wh_top_menu ul li a{
+    background-color:white;
+}
+.wh_top_menu a{
+    color: #333;
+    text-transform:lowercase;
+    font-variant:small-caps;
+}
 .wh_top_menu a:hover{
-    color: white;
+    color: #99cc00;
+}
+.wh_top_menu ul ul li a:hover {
+    background: white;
+}
+.wh_top_menu ul li:hover {
+    background-color: red;
 }
 /* The submenus */
 .wh_top_menu ul ul{
     background-color: white;
-    box-shadow: 0px 10px 45px -12px rgba(0, 0, 0, 0.3);
-    border-left: 1px solid #555;
-    border-bottom: 1px solid #555;
-    border-right: 1px solid #555;
-
-}
-/* Labels in main bar */
-.wh_top_menu ul li:hover{
-    background-color: orange;
-}
-.wh_top_menu ul ul li a:hover{
-    background: orange;
+    border: 1px solid #999;    
 }
 .wh_top_menu ul ul li{
-    border-top-color: #555;
+    border: none;
+    background-color:white;
 }
 
 /*
@@ -89,34 +102,29 @@ a:hover{
     display:none;
 }
 
-@media only screen and (max-width: 767px) {
-    .wh_indexterms_link a:before{
-        bottom: 0;
-    }
-}
-
 /*
  * ------------------------------------------------------------------
  *  
  * Breadcrumb
  *  
  */
-.wh_breadcrumb > .breadcrumb{
-    background: none;
+/*Hide the home icon and the separator */
+.wh_breadcrumb .home{
+    display:none;
+}
+.wh_breadcrumb li:first-of-type:after{
+    display:none;
+}
+.wh_breadcrumb li:not(:last-of-type):after{
+    content: ' > ';
 }
 .wh_breadcrumb .active > span{
     font-weight: bold;
+    color: #99cc00;
 }
-
-/* Change the 'Home' text into an icon. */
-.wh_breadcrumb .home > a > span{
-    display: none; /* Hide the 'Home' text */
-}
-.wh_breadcrumb .home > a:before{
-    content: '\e021'; /* Put an icon */
-    font-family: 'Glyphicons Halflings' !important;
-    font-size: medium;
-    padding-right: 0.5em;
+.wh_breadcrumb a{
+    color: #666;
+    font-weight:normal;
 }
 
 /*
@@ -125,6 +133,11 @@ a:hover{
  * Tools and navigation
  * 
  */
+.wh_tools{
+    border-bottom:1px solid silver;
+    margin-bottom:0.5em;
+}
+ 
 .wh_print_link,
 .wh_navigation_links,
 .wh_navigation_links .navnext,
@@ -139,9 +152,7 @@ a:hover{
  */
 .wh_tile {
     border-radius: .5em;
-    box-shadow: 0px 10px 45px -12px rgba(0, 0, 0, 0.3);
-    background-color: orange;
-    color: white;
+    border:0.2em solid #99cc00;
 }
 .wh_tile_title{
     text-align: center;
@@ -157,7 +168,6 @@ a:hover{
         height: auto;
     }
 }
-
 /* Make the link from the tile the entire width 
     TODO - dan - move to wh_default.css
 */
@@ -168,9 +178,11 @@ a:hover{
 .wh_tile_title a{
     display: block;
     width: 100%;
+    color: #000000;
 }
-.wh_tiles {
-    margin-top: 20px;
+
+.wh_tiles{
+    margin: 20px 0;
 }
 /* 
 You can style some of the tiles in a special way. 
@@ -181,69 +193,64 @@ Example:
 */
 
 
-
 /*
  * ------------------------------------------------------------------
  *  
  * Search area
  * 
  */
-.wh_search_input{
-    display: block;
-    background: url('resources/orange_bgr.jpg') no-repeat;
-    background-size: cover;
-    padding: 2em;
-    text-align: center;
-}
 
+#searchForm > div {
+}
 .wh_welcome:not(:empty){
     font-size: 2.5em;
     margin: 0 auto;
-    padding: 0 0 1em 0;
-    text-shadow: none;
-    color:#002D80;
+    padding: 0 0 .5em 0;
+    text-shadow: 0 0 8px #ffffff;
+    color:black;
 }
-
 /* Style differently the search from the main pahge (index.html), make it larger.*/
-.wh_main_page .wh_search_input{
+.wh_search_input{
+    display: block;
     padding: 4em;
     margin: 0;
-    background: url('resources/orange_bgr.jpg') no-repeat;
+    background: url('resources/green_bgr.jpg') no-repeat;
     background-size: cover;
-    box-shadow: 0 10px 45px -12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 7px 21px -12px rgba(0, 0, 0, 0.3);
 }
 .wh_search_textfield{
-    border: 1px solid gray;
-    border-radius: 0.6em;
+    background-color: #fff;
     padding: 0.3em;
+    border:1px solid #86bd5d;
+    border-radius: .5em;
 }
 .wh_search_button{
-    border: 1px solid gray;
-    border-radius: 0 0.6em 0.6em 0;
-    background-color:orange;
-    color:#fff;
+    color:white;
+    background-color: #86bd5d;
+    border-radius: 0 .5em .5em 0;
 }
+
 /* Render search area for devices smaller than 767px */
 @media only screen and (max-width: 767px) {
-    .wh_main_page .wh_search_input,
     .wh_search_input{
         padding: 2em;
     }
 }
-
 /*
  * ------------------------------------------------------------------
  *  
  * Side TOC
  * 
  */
+.wh_side_toc a {
+    color:#666;
+}
 .wh_side_toc{
     margin: 2em;
     padding: 1em;
-    border-radius: .5em;
-    box-shadow: 0px 10px 45px -12px rgba(0, 0, 0, 0.3);
-    background-color: orange;
-    color: white;
+    border-radius: .5em;    
+    border:0.2em solid #99cc00;
+
     font-size: 0.95em;
 }
 .wh_side_toc > ul{
@@ -258,8 +265,23 @@ Example:
     color: black;
 }
 
+/* A kind of progress, mark the active item with a symbol overlapping a bar */
+.wh_side_toc > ul {
+    border-left: 2px solid #99cc00;
+    margin-left: 1em; 
+    padding-left:1.5em; /* leave space for the leaf symbol */
+    position:relative;
+}
 
-
+.wh_side_toc .active:before{
+    content: "\e103"; /* the leaf symbol */
+    font-weight: bold;
+    font-family:"Glyphicons Halflings";
+    color: #99cc00;
+    display:block;
+    position:absolute;
+    left:-1px;
+}
 
 /*
  * ------------------------------------------------------------------
@@ -268,9 +290,10 @@ Example:
  * 
  */
 .wh_footer{
-    font-family: arial;
+    font-size:smaller;
     text-align: center;
     padding: 2em;
+    border-top: solid 1px #99cc00;
 }
 
 /*
@@ -280,25 +303,16 @@ Example:
  * 
  */
 .wh_topic_content{
-    box-shadow: 0px 10px 45px -12px rgba(0, 0, 0, 0.3);
-    border: 1px solid #EDEDED;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     line-height: 1.6em;
 }
 
 .wh_topic_content li{
     margin: 0.5em;
 }
-
-.wh_child_links,
-.wh_related_links {
-    padding-left: 1em;
-}
-
-.wh_topic_content a,
-.wh_child_links a,
-.wh_related_links a {
-    font-weight:bold;
+.wh_topic_content .ullinks{
+    list-style-type: disc;
 }
 
 
@@ -345,7 +359,6 @@ Example:
  */
 .wh_main_page_toc{
     border-radius:0.6em;
-    box-shadow: 0px 10px 45px -12px rgba(0, 0, 0, 0.3);
 }
 .wh_main_page_toc .wh_main_page_toc_entry a{
     color:black;
@@ -353,19 +366,30 @@ Example:
 
 /* Colors */
 .wh_main_page_toc{
+    margin-top: 2em;
     border: none;
 }
-.wh_main_page_toc .wh_main_page_toc_accordion_header, .wh_main_page_toc>.wh_main_page_toc_entry {
+.wh_main_page_toc .wh_main_page_toc_accordion_header, 
+.wh_main_page_toc>.wh_main_page_toc_entry {
     border-bottom: none;
 }
 .wh_main_page_toc_accordion_entries{
+    background-color: #eee;
 }
 .wh_main_page_toc .expanded {
-    background-color: orange;
+    background-color: #eee;
 }
-.wh_main_page_toc .wh_main_page_toc_accordion_header:hover, .wh_main_page_toc>.wh_main_page_toc_entry:hover{
-    background-color: orange;
+.wh_main_page_toc .wh_main_page_toc_accordion_header:hover, 
+.wh_main_page_toc>.wh_main_page_toc_entry:hover{
+    background-color: #eee;
 }
+.wh_main_page_toc_accordion_entries {
+    border-bottom:2px solid #99cc00;
+}
+.wh_main_page_toc a{
+    color:black;
+}
+
 
 
 
