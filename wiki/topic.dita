@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD LW DITA Topic//EN" "topic.dtd">
 <topic id="topic_elz_sfk_zw">
-  <title>Lightweight DITA</title>
+  <title>Lightweight DITA with Andrea</title>
   <shortdesc>Lightweight DITA can be used in the <b>ghd-wiki</b> project, thus you can take
     advantage of controlled authoring experience by providing placeholders, hints, inline actions
     and inline form controls.</shortdesc>
@@ -11,6 +11,10 @@
       the authoring experience through placeholders, hints, inline actions and form controls to edit
       attribute values in place, all these combined to provide a simple user interface suitable for
       any contributors.</p>
+    <ol id="ol_f3k_csp_tx">
+      <li/>
+      <li/>
+    </ol>
     <dl>
       <dlentry>
         <dt>test</dt>
