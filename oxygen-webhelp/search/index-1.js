@@ -38,9 +38,8 @@ var indexerLanguage="en";
 
 // Auto generated index for searching.
 w["able"]="3*26";
-w["ac"]="4*0";
 w["accepted"]="0*0,2*0";
-w["actions"]="1*1,3*0,4*26";
+w["actions"]="1*1,3*0,4*27";
 w["actual"]="1*0,4*0";
 w["advantage"]="1*1,4*27";
 w["all"]="1*0,4*0";
@@ -52,8 +51,10 @@ w["alternative"]="1*0,4*0";
 w["any"]="1*0,4*0";
 w["anyone"]="0*0,2*0";
 w["attribute"]="1*0,4*0";
-w["author"]="0*0,1*0,2*26,3*0,4*0";
-w["authoring"]="1*2,4*28";
+w["auth"]="1*0";
+w["author"]="0*0,2*26,3*0,4*0";
+w["authorin"]="4*0";
+w["authoring"]="1*2,4*27";
 w["automatically"]="0*2,2*2";
 w["available"]="3*0";
 w["avis"]="0*0";
