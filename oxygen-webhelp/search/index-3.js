@@ -1,6 +1,5 @@
 
 // Auto generated index for searching.
-w["providing"]="1*0,3*0,4*26";
 w["publish"]="0*0,2*0";
 w["publishing"]="0*0,2*0";
 w["regenerated"]="0*0,2*0";
