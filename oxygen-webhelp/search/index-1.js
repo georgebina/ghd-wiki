@@ -52,7 +52,8 @@ w["any"]="1*0,4*0";
 w["anyone"]="0*0,2*0";
 w["attribute"]="1*0,4*0";
 w["author"]="0*0,1*0,2*26,3*0,4*0";
-w["authoring"]="1*2,4*28";
+w["authorin"]="4*0";
+w["authoring"]="1*2,4*27";
 w["automatically"]="0*2,2*2";
 w["available"]="3*0";
 w["avis"]="0*0";
@@ -96,5 +97,4 @@ w["extended"]="1*0,4*0";
 w["few"]="0*2,2*53";
 w["file"]="0*0,1*0";
 w["folder"]="0*0,2*0";
-w["form"]="1*1,4*27";
 
