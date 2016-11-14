@@ -1,6 +1,5 @@
 
 // Auto generated index for searching.
-w["publish"]="0*0,2*0";
 w["publishing"]="0*0,2*0";
 w["regenerated"]="0*0,2*0";
 w["same"]="1*0,4*0";
@@ -28,6 +27,8 @@ w["supported"]="0*0,2*0";
 w["syntax"]="3*0";
 w["take"]="1*0,4*26";
 w["takes"]="1*0,4*0";
+w["test"]="1*1,4*1";
+w["ther"]="1*0";
 w["through"]="0*1,1*0,2*1,4*0";
 w["thus"]="1*0,3*0,4*26";
 w["tions"]="4*0";
