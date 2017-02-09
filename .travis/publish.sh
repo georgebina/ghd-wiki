@@ -39,15 +39,15 @@ echo "====================================="
 unzip oxygen-webhelp.zip 
 cp -R com.oxygenxml.* dita-ot-2.3.3/plugins/
 
-echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
-echo "" >> licensekey.txt
-echo $WEBHELP_LICENSE | tr " " "\n" | tail -8  >> licensekey.txt
-
-echo "****\n"
-echo $WEBHELP_LICENSE
-echo "\n****\n"
-cat licensekey.txt
-echo "\n****"
+echo "Registration_Name=georgebina76 @ gmail.com\n" > licensekey.txt
+echo "Company=-\n" >> licensekey.txt
+echo "Category=Enterprise\n" >> licensekey.txt
+echo "Component=Scripting\n" >> licensekey.txt
+echo "Version=18\n" >> licensekey.txt
+echo "Number_of_Licenses=1\n" >> licensekey.txt
+echo "Date=02-09-2017\n" >> licensekey.txt
+echo "Trial=31\n" >> licensekey.txt
+echo "SGN=MCwCFFiXcKdsP98u1dN+M2GfM5BRP2aBAhQTmF7fajirDPBaf0shTljGQlNw4g\=\=\n" >> licensekey.txt
 
 cp licensekey.txt dita-ot-2.3.3/plugins/com.oxygenxml.webhelp/licensekey.txt
 
