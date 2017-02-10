@@ -1,5 +1,8 @@
 
 // Auto generated index for searching.
+w["provide"]="1*0,4*0";
+w["provides"]="1*0,4*0";
+w["providing"]="1*0,3*0,4*26";
 w["publish"]="0*0,2*0";
 w["publishing"]="0*0,2*0";
 w["regenerated"]="0*0,2*0";
@@ -28,15 +31,13 @@ w["supported"]="0*0,2*0";
 w["syntax"]="3*0";
 w["take"]="1*0,4*26";
 w["takes"]="1*0,4*0";
-w["through"]="0*1,1*0,2*1,4*0";
+w["through"]="0*0,1*0,2*1,4*0";
 w["thus"]="1*0,3*0,4*26";
-w["tions"]="4*0";
 w["tool"]="1*1,4*1";
 w["toolbar"]="3*0";
 w["toolkit"]="0*0,2*26";
 w["topics"]="0*1,2*1";
-w["tr"]="0*0";
-w["travis"]="0*1,2*28";
+w["travis"]="0*2,2*28";
 w["use"]="3*26";
 w["used"]="1*0,3*26,4*26";
 w["user"]="1*1,4*1";
