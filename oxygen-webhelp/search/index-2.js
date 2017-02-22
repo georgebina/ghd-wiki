@@ -1,12 +1,12 @@
 
 // Auto generated index for searching.
+w["folder"]="0*0,2*0";
 w["form"]="1*1,4*27";
 w["format"]="0*0,2*0";
 w["formats"]="0*0,2*0";
 w["from"]="1*0,4*0";
 w["further"]="1*0,4*0";
 w["future"]="3*0";
-w["george"]="1*30,2*0,4*30";
 w["gh"]="0*0,2*0";
 w["gh-pages"]="0*0,2*0";
 w["ghd"]="0*0,1*0,2*26,4*30";
@@ -59,5 +59,4 @@ w["plugins"]="0*0,2*26";
 w["plus"]="0*0,2*26";
 w["preview"]="3*0";
 w["project"]="0*0,1*0,2*26,4*26";
-w["provide"]="1*0,4*0";
 
