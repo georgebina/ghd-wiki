@@ -43,11 +43,9 @@ echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
 echo "" >> licensekey.txt
 echo $WEBHELP_LICENSE | tr " " "\n" | tail -8  >> licensekey.txt
 
-echo "****\n"
-echo $WEBHELP_LICENSE
-echo "\n****\n"
-cat licensekey.txt
-echo "\n****"
+echo "****"
+cat licensekey.txt | head -8
+echo "****"
 
 cp licensekey.txt dita-ot-2.3.3/plugins/com.oxygenxml.webhelp/licensekey.txt
 
