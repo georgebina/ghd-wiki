@@ -16,6 +16,9 @@ To get the same functionality under your account, you need to follow the steps b
     - Disable *Build pull requests*
     - Define the GH_TOKEN variable under *Environment Variables* by setting its value to a GitHub Token that you can generate from GitHub in order to enable Travis to commit on your GitHub repository.
 To obtain that value, you need to go to *GitHub* and under *Settings* there is a *Personal access tokens* section. Use the *Generate new token* button to generate a token and enable the options under the *repo* category. Copy the token value and use it to define the value of the *GH_TOKEN* variable
+    - Define the WEBHELP_LICENSE variable under *Environment Variables* by setting its value to the oXygen Webhelp license key, eclosed in quotes - this will be used by the publishing process to build the webhelp output. You can obtain a trial license from 
+[http://oxygenxml.com/xml_webhelp/register.html](http://oxygenxml.com/xml_webhelp/register.html)  
+
 - You need to push some changes to GitHub on the *master* branch to force an initial build that will fix the links for the generated website to be for your project, rather than for the forked project. One possibility is to edit this file and push it to the repository, then you should find the updated website on GitHub Pages.
 
 - Check on the Travis website and see when the build is finalised, then your project GitHub Pages will be up-to-date and you can use the generated website.
