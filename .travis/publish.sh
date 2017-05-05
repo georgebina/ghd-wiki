@@ -38,6 +38,7 @@ echo "extract WebHelp to DITA-OT"
 echo "====================================="
 unzip oxygen-webhelp.zip 
 cp -R com.oxygenxml.* dita-ot-2.3.3/plugins/
+rm -rf dita-ot-2.3.3/plugins/com.oxygenxml.highlight
 
 echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
 echo "" >> licensekey.txt
