@@ -11,30 +11,10 @@
       the authoring experience through placeholders, hints, inline actions and form controls to edit
       attribute values in place, all these combined to provide a simple user interface suitable for
       any contributors.</p>
-    <ol id="ol_n4h_llm_5z">
-      <li/>
-      <li/>
-    </ol>
-    <dl>
-      <dlentry>
-        <dt/>
-        <dd/>
-      </dlentry>
-    </dl>
     <p>It is very easy to create content in LW-DITA, especially if you can benefit of some help from
       the authoring tool. The <xref href="https://oxygenxml.com/xml_web_author.html" format="html"
         scope="external">oXygen XML Web Author</xref> is an example of such a tool, that provides
       special support for working with LW-DITA, support that can be extended further to match your
       actual needs.</p>
-    <section id="section_r4q_mdb_vz">
-      <title/>
-      <p/>
-      <dl>
-        <dlentry>
-          <dt/>
-          <dd/>
-        </dlentry>
-      </dl>
-    </section>
   </body>
 </topic>
