@@ -96,7 +96,7 @@ $(document).ready(function () {
  */
 function loadSearchResources() {
     if (typeof window.indexerLanguage == 'undefined') {
-        var scripts = ["oxygen-webhelp/search/htmlFileInfoList.js?uniqueId=20170508120411", "oxygen-webhelp/search/index-1.js?uniqueId=20170508120411", "oxygen-webhelp/search/index-2.js?uniqueId=20170508120411", "oxygen-webhelp/search/index-3.js?uniqueId=20170508120411"];
+        var scripts = ["oxygen-webhelp/search/htmlFileInfoList.js?uniqueId=20170508123543", "oxygen-webhelp/search/index-1.js?uniqueId=20170508123543", "oxygen-webhelp/search/index-2.js?uniqueId=20170508123543", "oxygen-webhelp/search/index-3.js?uniqueId=20170508123543"];
         for (var entry in scripts) {
             var scriptTag = document.createElement("script");
             scriptTag.type = "text/javascript";
