@@ -2,6 +2,8 @@
 
 This project shows a basic Wiki implementation based on GitHub as content repository, Travis for automatic builds, XSLT as scripting language and DITA as the source format.
 
+<http://georgebina.github.io/ghd-wiki>
+
 The content stays in the *master* branch in the `wiki` subfolder and you can place there DITA topics which will be automatically published by *travis* to HTML using the `publish/publish.xsl` XSLT script and commited on the *gh-pages* branch which is served by *GitHub Pages* as a website.
 
 To get the same functionality under your account, you need to follow the steps below:
