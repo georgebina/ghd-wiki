@@ -1,4 +1,4 @@
-# Markdown GEORGE
+# Markdown
 
 Markdown can also be used to create pages, so people with Markdown only knowledge will still be able to create a page and use Markdown as the source for that.
 
