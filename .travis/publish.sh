@@ -18,7 +18,7 @@ echo "====================================="
 echo "download DITA-OT LW-DITA plugin"
 echo "====================================="
 
-wget https://github.com/oasis-open/dita-lightweight/archive/master.zip
+wget https://github.com/oasis-tcs/dita-lwdita/archive/master.zip
 
 echo "====================================="
 echo "extract DITA-OT LW-DITA to DITA-OT"
