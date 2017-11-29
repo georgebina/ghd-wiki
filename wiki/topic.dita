@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD XDITA Topic//EN" "topic.dtd">
 <topic id="topic_elz_sfk_zw">
-  <title>LW-DITA</title>
+  <title>LW-DITA GEORGE</title>
   <shortdesc>Lightweight DITA can be used in the <b>ghd-wiki</b> project, thus you can take
     advantage of controlled authoring experience  by providing placeholders, hints, inline actions
     and inline form controls.</shortdesc>
@@ -22,5 +22,35 @@
         scope="external">oXygen XML Web Author</xref> is an example of such a tool, that provides
       special support for working with LW-DITA, support that can be extended further to match your
       actual needs.</p>
+    <simpletable id="simpletable_by2_qrp_1cb">
+      <sthead>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </sthead>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+    </simpletable>
   </body>
 </topic>
