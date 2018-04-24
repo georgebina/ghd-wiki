@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD XDITA Topic//EN" "topic.dtd">
 <topic id="topic_elz_sfk_zw">
-  <title>LW-DITA GEORGE</title>
+  <title>LW-DITA GEORGE at DITA NA</title>
   <shortdesc>Lightweight DITA can be used in the <b>ghd-wiki</b> project, thus you can take
     advantage of controlled authoring experience  by providing placeholders, hints, inline actions
     and inline form controls.</shortdesc>
   <body>
+    <simpletable id="simpletable_nq4_mwm_pdb">
+      <sthead>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </sthead>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+      <strow>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+        <stentry/>
+      </strow>
+    </simpletable>
+    <dl>
+      <dlentry>
+        <dt/>
+        <dd/>
+      </dlentry>
+      <dlentry>
+        <dt/>
+        <dd/>
+      </dlentry>
+    </dl>
     <p>Lightweight DITA is a great alternative to Markdown, having the same or less complexity
       degree while being very clearly specified. The user interface takes advantage of controlling
       the authoring experience through placeholders, hints, inline actions and form controls to edit
