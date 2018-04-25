@@ -31,12 +31,12 @@ echo "====================================="
 echo "download WebHelp plugin"
 echo "====================================="
 
-wget http://archives.oxygenxml.com/Oxygen/Editor/InstData19.0/Webhelp/DITA-OT%202.x/oxygen-webhelp.zip
+wget http://mirror.oxygenxml.com/InstData/WebHelp/oxygen-webhelp-dot-2.x.zip
 
 echo "====================================="
 echo "extract WebHelp to DITA-OT"
 echo "====================================="
-unzip oxygen-webhelp.zip 
+unzip oxygen-webhelp-dot-2.x.zip
 cp -R com.oxygenxml.* dita-ot-2.3.3/plugins/
 rm -rf dita-ot-2.3.3/plugins/com.oxygenxml.highlight
 
