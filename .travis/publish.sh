@@ -48,7 +48,7 @@ echo "****"
 cat licensekey.txt | head -8
 echo "****"
 
-cp licensekey.txt dita-ot-2.3.3/plugins/com.oxygenxml.webhelp/licensekey.txt
+cp licensekey.txt dita-ot-2.3.3/plugins/com.oxygenxml.webhelp.responsive/licensekey.txt
 
 
 echo "====================================="
