@@ -31,7 +31,7 @@ echo "====================================="
 echo "download WebHelp plugin"
 echo "====================================="
 
-wget http://mirror.oxygenxml.com/InstData/WebHelp/oxygen-webhelp-dot-2.x.zip
+wget http://archives.oxygenxml.com/Oxygen/Editor/InstData19.1/Webhelp/DITA-OT-2.x/oxygen-webhelp.zip
 
 echo "====================================="
 echo "extract WebHelp to DITA-OT"
@@ -48,7 +48,7 @@ echo "****"
 cat licensekey.txt | head -8
 echo "****"
 
-cp licensekey.txt dita-ot-2.3.3/plugins/com.oxygenxml.webhelp.responsive/licensekey.txt
+cp licensekey.txt dita-ot-2.3.3/plugins/com.oxygenxml.webhelp/licensekey.txt
 
 
 echo "====================================="
