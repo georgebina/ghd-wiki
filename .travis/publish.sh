@@ -36,7 +36,7 @@ wget http://archives.oxygenxml.com/Oxygen/Editor/InstData19.1/Webhelp/DITA-OT-2.
 echo "====================================="
 echo "extract WebHelp to DITA-OT"
 echo "====================================="
-unzip oxygen-webhelp-dot-2.x.zip
+unzip oxygen-webhelp.zip
 cp -R com.oxygenxml.* dita-ot-2.3.3/plugins/
 rm -rf dita-ot-2.3.3/plugins/com.oxygenxml.highlight
 
