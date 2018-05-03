@@ -10,6 +10,7 @@ env:
   - TITLE="Sample DITA Wiki"
   - WELCOME="DITA magic with GitHub and oXygen"
   - TEMPLATE="aquamarine"
+  - VARIANT = "tiles"
 notifications:
   email:
     on_success: always
