@@ -6,91 +6,15 @@
     advantage of controlled authoring experience  by providing placeholders, hints, inline actions
     and inline form controls.</shortdesc>
   <body>
-    <simpletable id="simpletable_nq4_mwm_pdb">
-      <sthead>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </sthead>
-      <strow>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </strow>
-      <strow>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </strow>
-      <strow>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </strow>
-    </simpletable>
-    <dl>
-      <dlentry>
-        <dt/>
-        <dd/>
-      </dlentry>
-      <dlentry>
-        <dt/>
-        <dd/>
-      </dlentry>
-    </dl>
     <p>Lightweight DITA is a great alternative to Markdown, having the same or less complexity
       degree while being very clearly specified. The user interface takes advantage of controlling
       the authoring experience through placeholders, hints, inline actions and form controls to edit
       attribute values in place, all these combined to provide a simple user interface suitable for
       any contributors</p>
-    <dl>
-      <dlentry>
-        <dt/>
-        <dd/>
-      </dlentry>
-    </dl>
     <p>It is very easy to create content in LW-DITA, especially if you can benefit of some help from
       the authoring tool. The <xref href="https://oxygenxml.com/xml_web_author.html" format="html"
         scope="external">oXygen XML Web Author</xref> is an example of such a tool, that provides
       special support for working with LW-DITA, support that can be extended further to match your
       actual needs.</p>
-    <simpletable id="simpletable_by2_qrp_1cb">
-      <sthead>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </sthead>
-      <strow>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </strow>
-      <strow>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </strow>
-      <strow>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-        <stentry/>
-      </strow>
-    </simpletable>
   </body>
 </topic>
