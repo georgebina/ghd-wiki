@@ -20,7 +20,7 @@
       </topicmeta>
    </topic>
    <topic href="wiki/topic.html" data-id="topic_elz_sfk_zw" wh-toc-id="topic_elz_sfk_zw-d46e26">
-      <title>LW-DITA</title>
+      <title>LW-DITA teambuilding</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lightweight DITA can be used in the <strong class="ph b">ghd-wiki</strong> project, thus you can take     advantage of controlled authoring experience  by providing placeholders, hints, inline actions
             and inline form controls.
@@ -28,8 +28,8 @@
       </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="topic_elz_sfk_zw"></resourceid>
-         <navtitle class="- topic/navtitle ">LW-DITA</navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">LW-DITA</linktext><?ditaot genshortdesc?>
+         <navtitle class="- topic/navtitle ">LW-DITA teambuilding</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">LW-DITA teambuilding</linktext><?ditaot genshortdesc?>
          <shortdesc class="- map/shortdesc ">Lightweight DITA can be used in the 
             <b class="+ topic/ph hi-d/b ">ghd-wiki</b> project, thus you can take     advantage of controlled authoring experience  by providing placeholders, hints, inline actions
             and inline form controls.
