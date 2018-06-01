@@ -6,6 +6,7 @@
     advantage of controlled authoring experience  by providing placeholders, hints, inline actions
     and inline form controls.</shortdesc>
   <body>
+    <p>test changes </p>
     <p>Lightweight DITA is a great alternative to Markdown, having the same or less complexity
       degree while being very clearly specified. The user interface takes advantage of controlling
       the authoring experience through placeholders, hints, inline actions and form controls to edit
