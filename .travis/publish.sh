@@ -8,7 +8,7 @@ echo "====================================="
 echo "download DITA-OT"
 echo "====================================="
 wget https://github.com/dita-ot/dita-ot/releases/download/2.5.2/dita-ot-2.5.2.zip >> download.log 2>>download.log
-tail download.log
+tail -n 2 download.log
 
 echo "====================================="
 echo "extract DITA-OT"
@@ -20,7 +20,7 @@ echo "download DITA-OT LW-DITA plugin"
 echo "====================================="
 
 wget https://github.com/oasis-tcs/dita-lwdita/archive/master.zip >> download.log 2>>download.log
-tail download.log
+tail -n 2 download.log
 
 echo "====================================="
 echo "extract DITA-OT LW-DITA to DITA-OT"
@@ -34,7 +34,7 @@ echo "download WebHelp plugin"
 echo "====================================="
 
 wget http://archives.oxygenxml.com//Oxygen/WebHelp/InstData20.0/oxygen-webhelp-dot-2.x.zip  >> download.log 2>>download.log
-tail download.log
+tail -n 2 download.log
 
 echo "====================================="
 echo "extract WebHelp to DITA-OT"
@@ -66,7 +66,7 @@ echo "download Markdown plugin"
 echo "====================================="
 
 wget https://github.com/jelovirt/dita-ot-markdown/releases/download/1.1.0/com.elovirta.dita.markdown_1.1.0.zip >> download.log 2>>download.log
-tail download.log
+tail -n 2 download.log
 
 echo "====================================="
 echo "extract MarkDown plugin"
@@ -84,7 +84,7 @@ echo "====================================="
 echo "download Saxon9"
 echo "====================================="
 wget http://downloads.sourceforge.net/project/saxon/Saxon-HE/9.7/SaxonHE9-7-0-10J.zip >> download.log 2>>download.log
-tail download.log
+tail -n 2 download.log
 
 echo "====================================="
 echo "extract Saxon9"
