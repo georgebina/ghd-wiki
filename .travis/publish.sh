@@ -8,6 +8,7 @@ echo "====================================="
 echo "download DITA-OT"
 echo "====================================="
 wget https://github.com/dita-ot/dita-ot/releases/download/2.5.2/dita-ot-2.5.2.zip >> download.log 2>>download.log
+echo "..."
 tail -n 2 download.log
 
 echo "====================================="
@@ -15,12 +16,14 @@ echo "extract DITA-OT"
 echo "====================================="
 unzip dita-ot-2.5.2.zip >> extract.log 2>>extract.log
 head -n 10 extract.log
+echo "..."
 
 echo "====================================="
 echo "download DITA-OT LW-DITA plugin"
 echo "====================================="
 
 wget https://github.com/oasis-tcs/dita-lwdita/archive/master.zip >> download.log 2>>download.log
+echo "..."
 tail -n 2 download.log
 
 echo "====================================="
@@ -29,6 +32,7 @@ echo "====================================="
 
 unzip master.zip -d dita-ot-2.5.2 >> extract.log 2>>extract.log
 head -n 10 extract.log
+echo "..."
 
 mv dita-ot-2.5.2/dita-lwdita-master/org.oasis.xdita dita-ot-2.5.2/plugins/
 
@@ -37,6 +41,7 @@ echo "download WebHelp plugin"
 echo "====================================="
 
 wget http://archives.oxygenxml.com//Oxygen/WebHelp/InstData20.0/oxygen-webhelp-dot-2.x.zip  >> download.log 2>>download.log
+echo "..."
 tail -n 2 download.log
 
 echo "====================================="
@@ -44,6 +49,7 @@ echo "extract WebHelp to DITA-OT"
 echo "====================================="
 unzip oxygen-webhelp-dot-2.x.zip >> extract.log 2>>extract.log
 head -n 10 extract.log
+echo "..."
 cp -R com.oxygenxml.* dita-ot-2.5.2/plugins/
 
 echo $WEBHELP_LICENSE | tr " " "\n" | head -3 | tr "\n" " " > licensekey.txt
@@ -70,6 +76,7 @@ echo "download Markdown plugin"
 echo "====================================="
 
 wget https://github.com/jelovirt/dita-ot-markdown/releases/download/1.1.0/com.elovirta.dita.markdown_1.1.0.zip >> download.log 2>>download.log
+echo "..."
 tail -n 2 download.log
 
 echo "====================================="
@@ -77,6 +84,7 @@ echo "extract MarkDown plugin"
 echo "====================================="
 unzip com.elovirta.dita.markdown_1.1.0.zip -d dita-ot-2.5.2/plugins/com.elovirta.dita.markdown >> extract.log 2>>extract.log
 head -n 10 extract.log
+echo "..."
 
 echo "====================================="
 echo "integrate plugins"
@@ -89,6 +97,7 @@ echo "====================================="
 echo "download Saxon9"
 echo "====================================="
 wget http://downloads.sourceforge.net/project/saxon/Saxon-HE/9.7/SaxonHE9-7-0-10J.zip >> download.log 2>>download.log
+echo "..."
 tail -n 2 download.log
 
 echo "====================================="
@@ -96,6 +105,7 @@ echo "extract Saxon9"
 echo "====================================="
 unzip SaxonHE9-7-0-10J.zip -d saxon9/ >> extract.log 2>>extract.log
 head -n 10 extract.log
+echo "..."
 
 REPONAME=`basename $PWD`
 PARENTDIR=`dirname $PWD`
