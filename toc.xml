@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><toc xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml">
    <title><span xmlns="http://www.w3.org/1999/xhtml" class="title">Sample DITA Wiki</span></title>
-   <topic href="wiki/index.html" data-id="topic_zn3_2bc_zw" wh-toc-id="topic_zn3_2bc_zw-d46e9">
+   <topic href="wiki/index.html" data-id="topic_zn3_2bc_zw" wh-toc-id="topic_zn3_2bc_zw-d48e9">
       <title>GitHub DITA-based Wiki</title>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="topic_zn3_2bc_zw"></resourceid>
@@ -19,7 +19,7 @@
          </data>
       </topicmeta>
    </topic>
-   <topic href="wiki/topic.html" data-id="topic_elz_sfk_zw" wh-toc-id="topic_elz_sfk_zw-d46e26">
+   <topic href="wiki/topic.html" data-id="topic_elz_sfk_zw" wh-toc-id="topic_elz_sfk_zw-d48e26">
       <title>LW-DITA</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lightweight DITA can be used in the <strong class="ph b">ghd-wiki</strong> project, thus you can take     advantage of controlled authoring experience  by providing placeholders, hints, inline actions
@@ -36,7 +36,7 @@
          </shortdesc>
       </topicmeta>
    </topic>
-   <topic href="wiki/markdown.html" format="dita" data-id="markdown" wh-toc-id="markdown-d46e40">
+   <topic href="wiki/markdown.html" format="dita" data-id="markdown" wh-toc-id="markdown-d48e40">
       <title>Markdown</title>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="markdown"></resourceid>
