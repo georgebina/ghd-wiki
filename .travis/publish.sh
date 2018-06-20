@@ -40,7 +40,7 @@ echo "====================================="
 echo "download WebHelp plugin"
 echo "====================================="
 
-wget http://archives.oxygenxml.com//Oxygen/WebHelp/InstData20.0/oxygen-webhelp-dot-2.x.zip  >> download.log 2>>download.log
+wget https://www.oxygenxml.com/InstData/WebHelp/oxygen-webhelp-dot-2.x.zip  >> download.log 2>>download.log
 echo "..."
 tail -n 2 download.log
 
