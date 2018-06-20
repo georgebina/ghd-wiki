@@ -55,7 +55,8 @@ echo "Add Edit Link to DITA-OT"
 echo "====================================="
 
 # Add the editlink plugin
-git clone https://github.com/georgebina/ditaot-editlink-plugin dita-ot-2.5.2/plugins/com.oxygenxml.editlink/
+git clone https://github.com/oxygenxml/dita-reviewer-links plugins/
+cp -R plugins/com.oxygenxml.editlink dita-ot-2.5.2/plugins/
 
 echo "====================================="
 echo "download Markdown plugin"
