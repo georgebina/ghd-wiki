@@ -106,11 +106,7 @@ java -cp saxon9/saxon9he.jar:dita-ot-2.5.2/lib/xml-resolver-1.2.jar net.sf.saxon
 cat map.ditamap
 
 # Send some parameters to the "editlink" plugin as system properties
-export ANT_OPTS="$ANT_OPTS -Dditamap.path=map.ditamap"
-export ANT_OPTS="$ANT_OPTS -Dcwd=`pwd`"
-export ANT_OPTS="$ANT_OPTS -Drepo.url=github://getFileContent/$USERNAME/$REPONAME/$TRAVIS_BRANCH/"
-export ANT_OPTS="$ANT_OPTS -Dwebapp.url=https://www.oxygenxml.com/webapp-demo-aws/"
-
+export ANT_OPTS="$ANT_OPTS -Deditlink.remote.ditamap.url=github://getFileContent/$USERNAME/$REPONAME/$TRAVIS_BRANCH/map.ditamap"
 # Send parameters for the Webhelp styling.
 export ANT_OPTS="$ANT_OPTS -Dwebhelp.fragment.welcome='$WELCOME'"
 
