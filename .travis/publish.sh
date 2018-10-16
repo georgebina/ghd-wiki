@@ -70,6 +70,9 @@ echo "====================================="
 # Add the editlink plugin
 git clone https://github.com/oxygenxml/dita-reviewer-links plugins/
 cp -R plugins/com.oxygenxml.editlink dita-ot-2.5.2/plugins/
+# Add the dita-ot-css-pdf plugin
+git clone https://github.com/oxygenxml/dita-ot-css-pdf plugins/
+cp -R plugins/com.oxygenxml.pdf.css dita-ot-2.5.2/plugins/
 
 echo "====================================="
 echo "download Markdown plugin"
