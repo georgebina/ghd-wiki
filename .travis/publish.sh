@@ -34,7 +34,7 @@ unzip master.zip -d dita-ot-2.5.2 >> extract.log 2>>extract.log
 head -n 10 extract.log
 echo "..."
 
-mv dita-ot-2.5.2/dita-lwdita-master/org.oasis.xdita dita-ot-2.5.2/plugins/
+mv dita-ot-2.5.2/dita-lwdita-master/org.oasis-open.xdita dita-ot-2.5.2/plugins/
 
 echo "====================================="
 echo "download WebHelp plugin"
