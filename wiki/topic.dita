@@ -3,8 +3,8 @@
 <topic id="topic_elz_sfk_zw">
   <title>LW-DITA</title>
   <shortdesc>Lightweight DITA can be used in the <b>ghd-wiki</b> project, thus you can take
-    advantage of controlled authoring experience  by providing placeholders, hints, inline actions
-    and inline form controls.</shortdesc>
+    advantage of controlled authoring experience by providing placeholders, hints, inline actions
+    and inline form controls. </shortdesc>
   <body>
     <p>Lightweight DITA is a great alternative to Markdown, having the same or less complexity
       degree while being very clearly specified. The user interface takes advantage of controlling
