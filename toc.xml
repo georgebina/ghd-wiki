@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><toc xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc">
    <title><span xmlns="http://www.w3.org/1999/xhtml" class="title">Sample DITA Wiki</span></title>
    <topic href="wiki/topic.html" data-id="topic_elz_sfk_zw" wh-toc-id="topic_elz_sfk_zw-d53e9">
-      <title>LW-DITA</title>
+      <title>LW-DITA TEST</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lightweight DITA can be used in the <strong class="ph b">ghd-wiki</strong> project, thus you can take     advantage of controlled authoring experience by providing placeholders, hints, inline actions
             and inline form controls. 
@@ -9,8 +9,8 @@
       </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="topic_elz_sfk_zw"></resourceid>
-         <navtitle class="- topic/navtitle ">LW-DITA</navtitle><?ditaot gentext?>
-         <linktext class="- map/linktext ">LW-DITA</linktext><?ditaot genshortdesc?>
+         <navtitle class="- topic/navtitle ">LW-DITA TEST</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">LW-DITA TEST</linktext><?ditaot genshortdesc?>
          <shortdesc class="- map/shortdesc ">Lightweight DITA can be used in the 
             <b class="+ topic/ph hi-d/b ">ghd-wiki</b> project, thus you can take     advantage of controlled authoring experience by providing placeholders, hints, inline actions
             and inline form controls. 
