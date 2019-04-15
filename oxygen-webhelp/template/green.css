@@ -230,6 +230,7 @@ Example:
     color:white;
     background-color: #86bd5d;
     border-radius: 0 .5em .5em 0;
+    padding: 0.25em 1.1em;
 }
 
 /* Render search area for devices smaller than 767px */
@@ -334,13 +335,13 @@ Example:
 }
 
 .wh_publication_toc .active:before{
-    content: "\e103"; /* the leaf symbol */
+    content: "y"; /* the leaf symbol */
     font-weight: bold;
-    font-family:"Glyphicons Halflings";
+    font-family:"oXygen WebHelp", serif;
     color: #99cc00;
     display:block;
     position:absolute;
-    left:-1px;
+    left:1px;
 }
 
 /* Publication TOC tooltip */
@@ -426,6 +427,23 @@ Example:
 
 .searchresult li a{
     font-weight: bold;
+}
+
+/*--------- Search results breadcrumb ----------*/
+.search-breadcrumb li a {
+    color:#fff;
+    background: #99cc00;
+}
+.search-breadcrumb li .title:before,
+.search-breadcrumb li .title:after {
+    border-color: #99cc00;
+}
+.search-breadcrumb li .title:before {
+    border-left-color: transparent;
+}
+.search-breadcrumb li .title:after {
+    border-color: transparent;
+    border-left-color: #99cc00;
 }
 
 
