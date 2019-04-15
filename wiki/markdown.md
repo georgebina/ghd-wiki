@@ -7,3 +7,4 @@ For now the editing of Markdown content is directed to the [Github](http://www.g
 * syntax highlight 
 * specific Markdown smart actions and toolbar
 * live DITA preview
+* test
