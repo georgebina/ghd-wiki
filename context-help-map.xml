@@ -2,5 +2,5 @@
 <map>
    <appContext helpID="topic_elz_sfk_zw" path="wiki/topic.html"/>
    <appContext helpID="topic_zn3_2bc_zw" path="wiki/index.html"/>
-   <appContext helpID="markdown" path="wiki/markdown.html"/>
+   <appContext helpID="markdown_edited" path="wiki/markdown.html"/>
 </map>
