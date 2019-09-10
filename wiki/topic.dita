@@ -8,16 +8,10 @@
   <body>
     <dl>
       <dlentry>
-        <dt>test</dt>
+        <dt>DEMO</dt>
         <dd>
-          <p>description</p>
+          <p>TCUK</p>
         </dd>
-      </dlentry>
-    </dl>
-    <dl>
-      <dlentry>
-        <dt/>
-        <dd/>
       </dlentry>
     </dl>
     <p>Lightweight DITA is a great alternative to Markdown, having the same or less complexity
