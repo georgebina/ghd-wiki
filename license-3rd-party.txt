@@ -23,7 +23,7 @@ Bootstrap v4.1.3 (https://getbootstrap.com/)                                    
   - oxygen-webhelp/lib/bootstrap/js/bootstrap.bundle.min.js
   
 jQuery v3.1.1 (https://jquery.org)                                              MIT License (https://jquery.org/license/)
-  - oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js
+  - oxygen-webhelp/lib/jquery/jquery-3.4.1.min.js
   
 bootpag v1.07 (http://botmonster.com/jquery-bootpag/)                           MIT License (http://www.opensource.org/licenses/mit-license.php)
   - oxygen-webhelp/lib/jquery-bootpag/jquery.bootpag.min.js
@@ -88,7 +88,7 @@ Bootstrap v4.1.3 (https://getbootstrap.com/)                                    
   - oxygen-webhelp/feedback/resources/bootstrap/js/bootstrap.min.js
 
 jQuery v3.1.1 (https://jquery.org)                                              MIT License (https://jquery.org/license/)
-  - oxygen-webhelp/feedback/resources/js/jquery-3.1.1.min.js
+  - oxygen-webhelp/feedback/resources/js/jquery-3.4.1.min.js
 
 jQuery v1.11.3 (https://jquery.org)                                            MIT License (https://jquery.org/license/)  
   - oxygen-webhelp/feedback/resources/js/jquery-1.11.3.min.js                 
